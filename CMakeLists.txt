@@ -22,6 +22,12 @@ FetchContent_MakeAvailable(Catch2)
 
 add_library(cavitation_core
         src/solver.cpp
+        src/fluid_point.cpp
+        include/cavitation/fluid_point.hpp
+        src/flow_environment.cpp
+        include/cavitation/flow_environment.hpp
+        src/domain.cpp
+        include/cavitation/domain.hpp
 )
 
 target_include_directories(cavitation_core
@@ -31,6 +37,10 @@ target_include_directories(cavitation_core
 
 add_executable(cavitation_lab
         src/main.cpp
+        src/fluid_point.cpp
+        include/cavitation/fluid_point.hpp
+        src/domain.cpp
+        include/cavitation/domain.hpp
 )
 
 target_link_libraries(cavitation_lab
