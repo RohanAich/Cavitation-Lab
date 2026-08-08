@@ -9,5 +9,6 @@ namespace cavitation {
         double waterDensity;
         double temp;
         double gravitationalAccel;
+        double vapourPressure;
     };
 }

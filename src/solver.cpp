@@ -10,7 +10,7 @@
 namespace cavitation {
     void Solver::run() {
 
-        domain testDomain(1, 10, 2);
+        domain testDomain(1, 10);
         std::vector<fluid_point> testPoints = testDomain.getpoints();
         for (const auto & i : testPoints) {
             std::cout << i << std::endl;
