@@ -7,6 +7,5 @@
 int main() {
     cavitation::Solver solver;
     solver.run();
-
     return 0;
 }

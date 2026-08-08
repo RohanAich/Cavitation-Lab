@@ -4,6 +4,8 @@
 
 #pragma once
 
+#include <iostream>
+
 namespace cavitation {
     struct fluid_point {
         double posAlongFlow;
@@ -12,4 +14,7 @@ namespace cavitation {
         double localAbsPressure;
         double vapourPressure;
     };
+
+
+    std::ostream& operator<<(std::ostream& os, const fluid_point& p);
 }
