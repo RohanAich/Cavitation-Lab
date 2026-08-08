@@ -22,6 +22,10 @@ FetchContent_MakeAvailable(Catch2)
 
 add_library(cavitation_core
         src/solver.cpp
+        src/fluid_point.cpp
+        src/flow_environment.cpp
+        src/domain.cpp
+        src/boundary_conditions.cpp
 )
 
 target_include_directories(cavitation_core
